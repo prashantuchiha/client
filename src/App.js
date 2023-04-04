@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [uniqueId,setuniqueId]=useState('');
+  const [Name,setName]=useState('');
+  const [Age,setAge]=useState(0);
+  const [Data,setData]=useState([]);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>CRUD App with MERN</h1>
+      <label>ID </label>
+      <input type='String'></input>
+      <label>Name</label>
+      <input type='String'></input>
+      
+      <label>Age</label>
+      <input type='number'></input>
+      
+      <label>Team</label>
+      <input type='String'></input>
+      <button>Add</button>
     </div>
   );
 }
